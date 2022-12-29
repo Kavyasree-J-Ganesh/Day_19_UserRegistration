@@ -32,4 +32,19 @@ public class Regex {
             return false;
         }
     }
+
+    static boolean validateEmail(String email){
+        Pattern pattern = Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\\\.[A-Z]{2,6}$");
+        Matcher matcher = pattern.matcher(email);
+        boolean matchFound = matcher.matches();
+
+        if(matchFound){
+            System.out.println("Email " + email + " is in proper format");
+            return true;
+        } else {
+            System.out.println("Email " + email + " is not in proper format");
+            return false;
+        }
+    }
+
 }
