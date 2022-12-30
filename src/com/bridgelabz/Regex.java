@@ -34,7 +34,7 @@ public class Regex {
     }
 
     static boolean validateEmail(String email){
-        Pattern pattern = Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\\\.[A-Z]{2,6}$");
+        Pattern pattern = Pattern.compile("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}$");
         Matcher matcher = pattern.matcher(email);
         boolean matchFound = matcher.matches();
 

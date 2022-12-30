@@ -23,9 +23,8 @@ public class RegexMain {
         System.out.println("Enter Email");
         String email = scan.nextLine();
         Regex.validateEmail(email);
-        System.out.println("Enter a Lastname");
+        System.out.println("Enter Email");
         email = scan.nextLine();
         Regex.validateEmail(email);
-        
     }
 }
